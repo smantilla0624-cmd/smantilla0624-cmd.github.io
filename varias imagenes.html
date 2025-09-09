@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <!--en esta dos lineas se hecen para que sean compatibles con celulares-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--esto es para el titulo en la pagina-->
+    <title> tienda de juegos </title>
+
+    <!--esto vincula este archivo con el archivo css que prefiera-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Esto es el encabezado con un logo, ,menu y banner-->
+     <header>
+        <!--logotipo-->
+        <div class="logo">
+            <img src="logo.png" alt="logo">
+        </div>
+
+        <!--menu de navegacion-->
+        <nav>
+            <ul>
+                <li><a href="#">inicio</a></li>
+                <li><a href="#">productos</a></li>
+                <li><a href="#">ofertas</a></li>
+                <li><a href="#">contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!--portada/banner principal-->
+    <section class="banner">
+        <img src="banner.webp" alt="promocion principal">
+    </section>
+
+    <!--slider lo que permite ver las imagenes de opciones-->
+    <div class="slider">
+    
+    <!-- Slider de productos-->
+    <input type="radio" name="slide" id="slide1" checked>
+    <input type="radio" name="slide" id="slide2">
+    <input type="radio" name="slide" id="slide3">
+
+    <!--Slides-->
+    <div class="slides">
+        <div class="item">
+            <img src="fnaf.png" alt="producto1">
+            <h3>producto 1 Five Nights at Freddy's</h3>
+            <p>$50.00</p>
+        </div>
+        <div class="item">
+            <img src="silkson.png" alt="producto2">
+            <h3>producto 2 Silksong</h3>
+            <p>$100.00</p>
+        </div>
+        <div class="item">
+            <img src="undertale.png" alt="producto3">
+            <h3>producto 3 Undertale</h3>
+            <p>$100.00</p>
+        </div>
+    </div>
+    
+    <!--controles de navegacion-->
+    <div class="navigation">
+        <label for="slide1" class="bar"></label>
+        <label for="slide2" class="bar"></label>
+        <label for="slide3" class="bar"></label>
+    </div>
+
+    </div>
+    
+
+
+<!--botones para accionar-->
+<section class="acciones">
+    <button>compra Ahora</button>
+    <button>ver productos</button>
+    <button>ver oferta</button>
+</section>
+
+<!--formulario de contacto-->
+<section class="contacto">
+    <h2>contactanos</h2>
+    <form>
+        <!--campo de nombre-->
+        <input type="text" placeholder="nombre" required>
+        <!--campo de correo-->
+        <input type="email" placeholder="correo" required>
+        <!--campo de mensaje-->
+        <textarea placeholder="mensaje" required></textarea>
+        <!--boton de envio-->
+        <button type="submit">enviar</button>
+    </form>
+</section>
+    
+</body>
+</html>
